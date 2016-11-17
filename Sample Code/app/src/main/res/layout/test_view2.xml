@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:clickable="true"
+    tools:context="com.dji.sdk.sample.common.MainActivity"
+    android:weightSum="1">
+
+    <com.dji.sdk.sample.common.BaseFpvView style="@style/fpv"
+        android:layout_marginTop="100dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=  "pX : 0"
+            android:id="@+id/textView1"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pY : 0"
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView1"
+            android:layout_marginStart="26dp" />
+
+        <TextView
+            android:text="pZ : 0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView6"
+            android:layout_marginStart="16dp"
+            android:id="@+id/textView8" />
+    </com.dji.sdk.sample.common.BaseFpvView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+
+            android:layout_marginLeft="10dp"
+            style="@style/common_button"
+            android:layout_height="match_parent"
+            android:text="이륙"
+            android:id="@+id/button1"/>
+
+
+
+        <Button
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/button1"
+            style="@style/common_button"
+            android:layout_height="match_parent"
+            android:text="착륙"
+            android:id="@+id/button2" />
+
+        <Button
+
+            android:text="회전"
+
+            android:id="@+id/button3"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/button2"
+            style="@style/common_button"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button6" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button7" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button8" />
+
+    </LinearLayout>
+
+</LinearLayout>
